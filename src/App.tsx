@@ -9,6 +9,10 @@ import { Navi } from './components/navbar/Navi';
 import {FeedbackForm} from './components/popups/FeedbackForm';
 
 function App() {
+
+
+
+
   return (
     <div className="App">
       <Header/>

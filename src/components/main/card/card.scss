@@ -2,8 +2,13 @@
 
 .card{
     width: 300px;
-    min-height: 330px;
-    @include shadow
+    min-height: 340px;
+    @include shadow;
+    font-size: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    overflow-y: hidden;
 }
 
 .card-row{
@@ -14,11 +19,8 @@
 }
 
 .card-row--top{
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtvZxJ8RKPlt_E9uSqXkNqlv9gJYTwI003dg&usqp=CAU');
-    font-size: none;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: -75px;
+    // background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtvZxJ8RKPlt_E9uSqXkNqlv9gJYTwI003dg&usqp=CAU');
+    
 }
 
 .card-row--bottom{
@@ -29,7 +31,7 @@
 }
 
 .car-name{
-    background-color: $color_main;
+    background-color: rgba($color: $color_main, $alpha: 0.9);
     color: white;
     width: 100%;
     text-align: center;
@@ -38,35 +40,41 @@
 .card-about-list {
     font-size: 12px;
     margin-bottom: 10px;
+    width: 100%;
+    color: white;
 }
-.card-about-list__item {
+.card-about {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    background-color: rgba($color: black, $alpha: 0.8);
+    color: white;
+    width: 100%;
     span{
-        padding: 3px 5px;
-        width: 150px;
-        text-align: left;
-        -webkit-line-clamp: 1; /* Число отображаемых строк */
-        display: -webkit-box; /* Включаем флексбоксы */
-        -webkit-box-orient: vertical; /* Вертикальная ориентация */
-        overflow: hidden; 
-        text-decoration: underline;
-        color: $color_main;
+        margin: 10px 0px;
         &:first-child{
-            width: 40px;
-            text-align: right;
-            text-decoration: none;
-            color: black;
+            display: -webkit-box; 
+            -webkit-line-clamp: 1; 
+            -webkit-box-orient: vertical; 
+            overflow: hidden;
+            width: 230px;
+            text-align: center;
         }
     }
+  
 }
 .card-buttons {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     button{
         height: 30px;
         background-color: $color_main;
-        margin: 5px;
+        color: white;
+        font-size: 16px;
+        margin: 0px 10px;
         padding: 3px 5px;
-
+       
     }   
 }
