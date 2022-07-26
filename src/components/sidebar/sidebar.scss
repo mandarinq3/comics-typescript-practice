@@ -1,0 +1,28 @@
+@use '../../global-styles/global-styles' as *;
+
+.aside-navi {
+    flex-grow: 2;
+}
+
+.aside-navi__title {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 45px;
+color: $color_main;
+@include shadow
+}
+
+.aside-navi__list {
+}
+
+.aside-navi-list__item {
+    padding: 10px 5px;
+    @include shadow;
+    margin: 5px 0px;
+    &:hover{
+        box-shadow: 0px 6px 1px #bde0fa;
+        background-color: $color_main;
+        color: white;
+    }
+}

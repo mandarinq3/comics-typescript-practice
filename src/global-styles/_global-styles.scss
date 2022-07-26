@@ -1,0 +1,6 @@
+$color_main: #61b7f8;
+$color_secondary:rgb(123, 254, 195);
+
+@mixin shadow{
+    box-shadow: 1px 1px 5px $color_main;
+}

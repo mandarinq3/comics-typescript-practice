@@ -1,0 +1,72 @@
+@use '../../../global-styles/global-styles' as *;
+
+.card{
+    width: 300px;
+    min-height: 330px;
+    @include shadow
+}
+
+.card-row{
+    height: 45%;
+    &:last-child{
+        height: 55%;
+    }
+}
+
+.card-row--top{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtvZxJ8RKPlt_E9uSqXkNqlv9gJYTwI003dg&usqp=CAU');
+    font-size: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -75px;
+}
+
+.card-row--bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-name{
+    background-color: $color_main;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.card-about-list {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.card-about-list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+        padding: 3px 5px;
+        width: 150px;
+        text-align: left;
+        -webkit-line-clamp: 1; /* Число отображаемых строк */
+        display: -webkit-box; /* Включаем флексбоксы */
+        -webkit-box-orient: vertical; /* Вертикальная ориентация */
+        overflow: hidden; 
+        text-decoration: underline;
+        color: $color_main;
+        &:first-child{
+            width: 40px;
+            text-align: right;
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+.card-buttons {
+    button{
+        height: 30px;
+        background-color: $color_main;
+        margin: 5px;
+        padding: 3px 5px;
+
+    }   
+}

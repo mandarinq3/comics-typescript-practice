@@ -1,0 +1,50 @@
+@use '../../global-styles/global-styles' as *;
+
+.header{
+    background-color: $color_main;
+    padding: 5px 0px;
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .col{
+        display: flex;
+        align-items: center;
+        input{
+            padding:0px 5px 0px 5px;
+            margin: 0px 5px 0px 0px;
+            border-radius: 5px;
+            width: 250px;
+            height: 30px;
+            outline: none;
+        }
+    }
+}
+
+.fa-magnifying-glass{
+    color: white;
+}
+
+
+.header-favorite{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .fa-bookmark{
+        color: white;
+        font-size: 25px;
+    }
+}
+
+
+.header-logo{
+    img{
+        width: 60px;
+        height: 60px;
+    }
+}
